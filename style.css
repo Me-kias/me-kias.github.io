@@ -1,0 +1,452 @@
+/* General Reset Styles */
+* {
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    padding: 0; /* Removes default padding from all elements */
+    margin: 0; /* Removes default margin from all elements */
+    font-family: poppins, sans-serif; /* Sets the font to Poppins or any available sans-serif font */
+    text-decoration: none; /* Removes underline from links by default */
+}
+
+/* Body Styles */
+body {
+    overflow-x: hidden; /* Hides horizontal overflow, preventing horizontal scroll */
+}
+
+/* HTML Styles */
+html {
+    overflow-y: scroll; /* Ensures vertical scroll is always available */
+}
+
+h1 {
+
+    color:  white; /* Sets the color of <h2> elements to a specific blue */
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/* Heading Styles */
+h2 {
+    color:  white; /* Sets the color of <h2> elements to a specific blue */
+}
+
+/* Hero Header Styles */
+.hero-header {
+    width: 100%; /* Ensures the hero header spans the full width of its container */
+    height: 100%; /* Ensures the hero header takes the full height of its container */
+    min-height: 100vh; /* Ensures the hero header is at least as tall as the viewport */
+    background: #222; /* Sets a dark background color */
+    display: flex; /* Uses Flexbox for layout */
+    align-items: center; /* Vertically centers children elements */
+    justify-content: flex-end; /* Aligns children elements to the right */
+}
+
+/* Wrapper Styles */
+.wrapper {
+    width: 1280px; /* Sets a fixed width for the wrapper */
+    max-width: 95%; /* Ensures the width doesn’t exceed 95% of the viewport width */
+    margin: 0 auto; /* Centers the wrapper horizontally */
+    padding: 0 20px; /* Adds padding on the left and right */
+}
+
+/* Header Styles */
+header {
+    padding: 40px 0 30px; /* Adds vertical padding around the header */
+    display: flex; /* Uses Flexbox for layout */
+    justify-content: space-between; /* Spreads items out with space between them */
+    align-items: center; /* Vertically centers items */
+    flex-wrap: wrap; /* Allows items to wrap onto multiple lines if necessary */
+}
+
+/* Logo Styles */
+.logo {
+    display: flex; /* Align logo elements horizontally */
+    align-items: center; /* Vertically center the logo */
+    margin-right: auto; /* Pushes the navigation links to the right */
+}
+
+.logo-img {
+    height: 55px; /* Set a fixed height */
+    width: 50px;  /* Set a fixed width to maintain circular shape */
+    border-radius: 47%; /* Fully circular image */
+    object-fit: contain; /* Ensures the image covers the entire container */
+   /* display: block; /* Ensures the image behaves like a block element */
+    margin-right: 7px; /* Space to the right of the logo */
+    box-shadow: 0 10px 10px -2px rgb(0 0 0 / 100%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(0.9); /* Zoom out the image to 80% of its size */
+}
+
+.logo-img:hover {
+    transform: scale(1.1); /* Slightly enlarges the image on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds shadow on hover */
+}
+
+.logo i {
+    height: 45px; /* Sets the height of the icon */
+    width: 45px; /* Sets the width of the icon */
+    background-color: #007ced; /* Sets the background color of the icon */
+    border-radius: 50%; /* Makes the icon circular */
+    color: #fff; /* Sets the icon color to white */
+    font-weight: 700; /* Makes the icon text bold */
+    font-size: 1.5rem; /* Sets the font size of the icon */
+    padding: 10px; /* Adds padding inside the icon */
+    margin-right: 5px; /* Adds space between the icon and text */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    text-align: center; /* Centers text inside the icon */
+}
+
+.logo .logo-text {
+    font-size: 24px; /* Sets the font size of the logo text */
+    font-weight: 500; /* Sets the font weight of the logo text */
+    color: #fff; /* Sets the color of the logo text to white */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #222; /* Dark background color */
+    border-bottom: 1px solid #444; /* Subtle border to separate nav from content */
+    padding: 10px 45px; /* Adds padding around navigation items */
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Align logo to the left and links to the right */
+    align-items: center; /* Vertically center both logo and links */
+    width: 100%; /* Ensure the nav spans the full width of the page */
+    position: fixed; /* Fix the nav to the top of the viewport */
+    top: 0; /* Stick the nav to the top */
+    z-index: 999; /* Ensure the nav stays above other content */
+}
+
+nav .togglebtn {
+    width: 35px; /* Sets the width of the toggle button */
+    height: 35px; /* Sets the height of the toggle button */
+    position: absolute; /* Positions the button absolutely within its container */
+    top: 45px; /* Positions the button from the top */
+    right: 3%; /* Positions the button from the right edge */
+    z-index: 5; /* Ensures the button appears above other content */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    display: none; /* Hides the toggle button by default */
+}
+
+nav .togglebtn span {
+    display: block; /* Makes each span a block element */
+    background-color: #007ced; /* Sets the background color of the bars */
+    margin: 5px 0; /* Adds vertical margin between bars */
+    width: 100%; /* Makes each bar span the full width of the toggle button */
+    height: 3px; /* Sets the height of each bar */
+    transition: 0.3s; /* Adds a smooth transition effect */
+}
+
+nav .navlinks {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px; /* Adds space between the links and the right edge */
+}
+
+nav .navlinks li {
+    display: inline-block;
+    margin-right: 2.5rem;
+}
+
+nav .navlinks li a {
+    color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+.navlinks a:hover {
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    transition: font-weight 0.3s ease, box-shadow 0.3s ease;
+}
+/* Style the active class (and buttons on mouse-over) */
+.active, .btn:hover {
+    font-weight: bold;
+}
+
+/* Container Styles */
+.container {
+    display: flex; /* Uses Flexbox for layout */
+    align-items: center; /* Vertically centers items */
+    justify-content: flex-end; /* Aligns items to the right */
+    width: 100%; /* Full width to accommodate fixed nav */
+    padding-top: 4rem; /* Adds padding from the top */
+    box-sizing: border-box; /* Includes padding in the element’s total width and height */
+}
+
+/* Container for the paragraph section */
+.info-box {
+    background-color: black;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    max-width: 1000px;
+    margin-right: auto;
+}
+
+.info-item {
+    margin-bottom: 75px;
+}
+
+.info-item h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.info-icon {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+/* Paragraph styling */
+.info-item p {
+    line-height: 1.6;
+    color: #555;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Spacing for the last paragraph */
+.info-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Hover effect on paragraphs */
+.info-box:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.info-box:hover .info-item p {
+    color: green;
+}
+
+/* Text effects */
+.info-box h3 {
+    transition: color 0.3s;
+}
+
+.info-box:hover h3 {
+    color: #007BFF;
+}
+
+/* Hero Picture Styles */
+.hero-pic {
+    width: 300px; /* Sets the width of the hero picture */
+    height: 300px; /* Sets the height of the hero picture */
+    border-radius: 50%; /* Makes the picture circular */
+    overflow: hidden; /* Hides overflow outside the border */
+    border: 15px solid #444; /* Adds a border around the picture */
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5); /* Adds a shadow to the picture */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Sets the table to take full width of its container */
+    max-width: 1000px; /* Limits the maximum width of the table */
+    margin-top: 50px; /* Adds margin above the table */
+    margin-bottom: 50px;
+    border-collapse: collapse; /* Collapses table borders into a single border */
+    background-color: white; /* Sets a white background for the table */
+    border-radius: 8px; /* Rounds the corners of the table */
+    overflow: hidden; /* Hides overflow outside the border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow around the table */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Sets a light gray border for the table, header, and cells */
+}
+
+th, td {
+    border: 1px solid #000; /* Applies a solid black border to header and cells */
+    padding: 12px 15px; /* Adds padding inside table cells */
+    text-align: left; /* Aligns text to the left */
+}
+
+th {
+    background-color: green; /* Sets the background color of the table headers */
+    color: white; /* Sets the text color of the table headers to white */
+    text-transform: uppercase; /* Converts text to uppercase */
+    font-size: 14px; /* Sets the font size of the headers */
+    font-weight: 600; /* Makes the header text bold */
+}
+
+/* Profile image styles */
+.hero-pic {
+    position: fixed; /* Fixes the position relative to the viewport */
+    top: 150px; /* Distance from the top of the viewport */
+    left: 90px; /* Distance from the left of the viewport */
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 15px solid #444;
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+/* Ensure the image inside maintains its aspect ratio */
+.hero-pic img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Hover Effect for Profile Picture */
+.hero-pic img:hover {
+    transform: scale(1.1); /* Slightly enlarge image on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow to image on hover */
+}
+/* Adjust hero-text to be positioned on the far right */
+.hero-text {
+    max-width: 500px;
+    text-align: left; /* Align text to the right */
+    margin-left: auto; /* Push the text to the right */
+}
+
+/* Ensure paragraphs and headings are aligned properly */
+.hero-text h5, .hero-text h1, .hero-text p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Adjust padding and margins for better spacing */
+.hero-text h5 {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.hero-text h5 span{
+    color: green;
+    font-size: 16px;
+}
+.hero-text h1 {
+    font-family: 'Great Vibes', cursive; /* Signature font */
+    font-size: 2.5rem; /* Smaller size */
+    font-weight: 300; /* Light weight */
+    color: white; /* Text color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+.hero-text p {
+    color: white;
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+.btn-group{
+    margin:45px 0;
+}
+.btn-group .btn{
+    border-color: #d5d5d5;
+    color:#fff;
+    background-color: #333;
+    padding: 12px 25px;
+    margin: 5px 0px;
+    margin-right:7px;
+    border-radius: 30px;
+    border:2px solid #e5e5e5;
+    box-shadow:  0 10px 10px -8px rgb(0 0 0 / 78%);
+}
+.btn.active{
+    border-color: #007ced;
+}
+/* Individual FAQ Item */
+.faq-item {
+    margin-bottom: 2rem;
+    margin-top: 90px;
+}
+
+.faq-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.faq-item a {
+    color: #004080;
+    text-decoration: none;
+}
+
+.faq-item a:hover {
+    text-decoration: underline;
+}
+.social {
+    position: fixed;
+    bottom: 50px; /* Ensure icons are above the footer */
+    left: 20px; /* Space from the left edge of the screen */
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Stack icons vertically */
+    gap: 10px; /* Space between icons */
+    z-index: 100; /* Ensure icons are above other content */
+}
+
+
+.social-container
+{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 10;
+}
+.social-img {
+    width: 32px; /* Adjust size */
+    height: 32px;
+    border-radius: 50%; /* Circular icons */
+    object-fit: cover; /* Ensures image fits within the circle */
+    transition: transform 0.3s ease; /* Smooth hover transition */
+}
+.social-img:hover {
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+    transform: rotate(360deg);
+}
+/* Yearly Summary Styling */
+.summary {
+    background-color: gray; /* Dark background for summary */
+    color: black; /* White text color */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.summary h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.summary p {
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
+
+/* Simple, Colorless Footer Line */
+footer {
+    width: 100%;
+    border-top: 1px solid #444; /* Slightly darker border for subtle definition */
+    background-color: #222; /* Matches the page background color */
+    color: #e5e5e5; /* Text color for better visibility */
+    text-align: center;
+    padding: 10px 0; /* Space around text */
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Light shadow for subtle depth */
+    bottom: 0%;
+}
+
+footer p {
+    margin: 0;
+}
+

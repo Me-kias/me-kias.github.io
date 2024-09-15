@@ -2,14 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">-->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <nav>
-        <a href="profile.html">Profile</a>
-    </nav>
-    <h1>Hello world
-    </h1>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+              
+                <nav>
+                    <div class="logo">
+                        <img src="img/logo-no-background.png" alt="logo" class="logo-img">
+                        <!--<i class="fa-solid fa-a"></i>-->
+                        <div class="logo-text">kias Tesfaye</div>
+                    </div>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="img/IMG_prof.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm a &nbsp;<span class="input">Frontend Developer</span></h5>
+                    <h1>Mikias Tesfaye</h1>
+                    <h2><br>Why ICT?</h2>
+                     <!-- New container for paragraphs -->
+    <div class="info-box">
+        <div class="info-item">
+            <h3><img src="img/Why-is-ICT.png" alt="Icon 1" class="info-icon"> Why I Chose ICT</h3>
+            <p>I've always been curious about how technology works and how it influences our daily lives. The HBO-ICT program feels like the perfect fit for me because it will allow me to dig deeper into areas like coding and problem-solving. I’ve always wanted to understand how digital systems are built and function. I’m excited about learning these skills and gaining the tools I need to start a career in ICT.</p>
+        </div>
+
+        <div class="info-item">
+            <h3><img src="img/ict_fast.jpg" alt="Icon 2" class="info-icon"> The Fast-Paced Nature of ICT</h3>
+            <p>What really draws me to ICT is how quickly it changes. There are always new technologies, tools, and ideas to explore, which keeps things exciting. I love the idea of working in a field where there's always something new to learn and improve. I’m looking forward to diving into this world and challenging myself to keep up with the pace of innovation.</p>
+        </div>
+
+        <div class="info-item">
+            <h3><img src="img/tt.png" alt="Icon 3" class="info-icon"> Opportunities in ICT</h3>
+            <p>I’m excited by how broad the ICT field is. Whether it’s working on software, solving security issues, or improving user experiences, there are so many opportunities to make an impact. I like the idea of being able to contribute to different industries and help solve real-world problems with technology. It’s this mix of creativity and problem-solving that motivates me to pursue a future in ICT.</p>
+        </div>
+
+        <div class="info-item">
+            <h3><img src="img/collab.jpg" alt="Icon 4" class="info-icon"> Collaboration in ICT</h3>
+            <p>I’m looking forward to collaborating with others in this field. ICT is a team-driven industry, and I know that working with people who have different skills and perspectives will help me grow. I enjoy learning from others and tackling challenges together, and I think this will be a big part of my experience in the HBO-ICT program.</p>
+        </div>
+    </div>
+</div>
+
+                    <div class="social-container">
+                    <div class="social">
+                        <a href="#"><img src="img/instagram.png" alt="Instagram" class="social-img"></a>
+                        <a href="#"><img src="img/linkedin.png" alt="LinkedIn" class="social-img"></a>
+                        <a href="#"><img src="img/github.png" alt="github" class="social-img"></a>
+                    </div>
+                </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+
+     <!---typed js for typing text effect-->
+     <!---->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","Backend Developer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+
+<footer>
+    <div>
+        <p>&copy; 2024 Mikias Tesfaye. All rights reserved.</p>
+    </div>
+</footer>
+
 </body>
 </html>
