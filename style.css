@@ -168,7 +168,7 @@ nav .navlinks li a {
     display: flex; /* Uses Flexbox for layout */
     align-items: center; /* Vertically centers items */
     justify-content: flex-end; /* Aligns items to the right */
-    width: 100%; /* Full width to accommodate fixed nav */
+    width: 75%; /* Full width to accommodate fixed nav */
     padding-top: 4rem; /* Adds padding from the top */
     box-sizing: border-box; /* Includes padding in the element’s total width and height */
 }
@@ -176,12 +176,13 @@ nav .navlinks li a {
 /* Container for the paragraph section */
 .info-box {
     background-color: black;
-    padding: 30px;
+    padding: 20px;
+    width: 1000%;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
     margin-bottom: 10px;
-    max-width: 1000px;
+    max-width: 895px;
     margin-right: auto;
 }
 
@@ -354,31 +355,94 @@ th {
 .btn.active{
     border-color: #007ced;
 }
+
+/* Aside menu */
+.aside-menu {
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    width: 250px; /* Set a fixed width */
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Ensure the menu stays on top */
+}
+
+.aside-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aside-menu ul li {
+    margin-bottom: 15px; /* Space between each item */
+}
+
+.aside-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.aside-menu ul li a:hover {
+    background-color: #555; /* Change background color on hover */
+}
+
+
+/* Main content adjustment */
+.blog-container {
+    margin-left: 280px; /* Add margin to avoid overlap with the aside menu */
+    padding: 20px;
+}
+.blog-post {
+    margin-bottom: 40px;
+}
+
+.blog-post h2 {
+    font-size: 24px;
+    color: #f0f0f0;
+}
+
+.blog-post p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #dcdcdc;
+}
+/* Main FAQ Container */
+.faq-container {
+    margin: 50px 0;
+    padding: 30px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 /* Individual FAQ Item */
 .faq-item {
     margin-bottom: 2rem;
-    margin-top: 90px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 15px;
 }
 
+/* FAQ Question */
 .faq-item h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 0.5rem;
-    color: white;
+    color: #fff;
+    cursor: pointer;
 }
 
-.faq-item p {
+/* FAQ Answer */
+.faq-answer {
     font-size: 1rem;
-    line-height: 1.5;
-    color: #555;
-}
-
-.faq-item a {
-    color: #004080;
-    text-decoration: none;
-}
-
-.faq-item a:hover {
-    text-decoration: underline;
+    line-height: 1.6;
+    color: #dcdcdc;
 }
 .social {
     position: fixed;
@@ -445,8 +509,18 @@ footer {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Light shadow for subtle depth */
     bottom: 0%;
 }
+.read-more{
+    color: white;  /* green color */;
+}
 
 footer p {
     margin: 0;
 }
 
+.footer-logo {
+    width: 25px; /* Small size for the logo */
+    height: auto; /* Maintain the aspect ratio */
+    position: absolute;
+    right: 20px; /* Position the logo 20px from the right edge */
+    bottom: 0%;
+}

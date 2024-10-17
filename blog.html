@@ -1,71 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="hero-header">
         <div class="wrapper">
-        <nav>
-            <div class="logo">
-                <img src="img/logo-no-background.png" alt="logo" class="logo-img">
-                <!--<i class="fa-solid fa-a"></i>-->
-                <div class="logo-text">kias Tesfaye</div>
-            </div>
-            <div class="togglebtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="navlinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="FAQ.html">FAQ</a></li>
-                <li><a href="Blog.html" class="active">Blog</a></li>
-            </ul>
-        </nav>
-        <main class="blog-container">
-            <h1>Blog</h1>
-    
-            <section class="blog-post">
-                <h2>Study Choice</h2>
-               <p style="color: white;"><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi error eaque mollitia, ipsa veritatis perspiciatis. At, quasi ea, repellendus nesciunt necessitatibus similique optio sit laborum ducimus repudiandae veniam? Perferendis, rerum!....<a href="posts/Study Choice.html" class="read-more">Read More</a></p>
-            </section>
-    
-            <section class="blog-post">
-                <h2><br>Personal SWOT Analysis</h2>
-               <p style="color: white;"><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, odit ducimus laborum ratione velit minima architecto reiciendis? Aliquid culpa mollitia, voluptate fuga architecto maxime. Quidem adipisci quod quos nostrum tempora?....<a href="posts/Personal SWOT Analysis.html" class="read-more">Read More</a></p>
-            </section>
-    
-            <section class="blog-post">
-                <h2><br>Programming Experience</h2>
-                <p style="color: white;"><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam minima eius nulla sit praesentium quia illum reprehenderit omnis saepe veniam, iste expedita nobis. Itaque vitae voluptates animi repellat id quisquam?....<a href="posts/Programming Experience.html" class="read-more">Read More</a></p>
-            </section>
-    
-            <section class="blog-post">
-                <h2><br>First Feedback</h2>
-               <p style="color: white;"><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis autem placeat amet exercitationem delectus deserunt fugit labore modi accusamus totam, veniam aperiam asperiores omnis provident mollitia. Quaerat, deserunt. Incidunt, voluptate....<a href="posts/First Feedback.html" class="read-more">Read More</a></p>
-            </section>
-    
-            <section class="blog-post">
-                <h2><br>Exploring the ICT Field</h2>
-                <p style="color: white;"><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, autem deleniti quaerat nostrum perferendis, harum sed sint quos facere aliquam quia nemo doloribus velit fugiat, eligendi praesentium. Sed, nisi debitis...<a href="posts/Exploring the ICT Field.html" class="read-more">Read More</a></p>
-            </section>
-        </main>
-    
-    </div>
-</div>
+            <nav>
+                <div class="logo">
+                    <img src="img/logo-no-background.png" alt="logo" class="logo-img">
+                    <!--<i class="fa-solid fa-a"></i>-->
+                    <div class="logo-text">kias Tesfaye</div>
+                </div>
+                <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="navlinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="Blog.html" class="active">Blog</a></li>
+                </ul>
+            </nav>
+            <!-- Aside Menu -->
+            <aside class="aside-menu">
+                <ul>
+                    <li><a
+                            href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/CER-HZ-Bachelor-full-time-2023-2024-DEF-version-20240412.pdf">The
+                            HZ HBO-ICT Course and Examination Regulations (CER)</a></li>
+                    <li><a
+                            href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf    ">The
+                            Implementation Regulations (IR) of the HBO-ICT program</a></li>
+                    <li><a
+                            href="https://glaze-donut-5a5.notion.site/Assignment-Specification-661c5ac5d7494328a58be61d00dd41e4">Assignment
+                            Specification</a></li>
+                    <li><a href="https://learn.hz.nl/my/">Study progresss</a></li>
+                    <li><a href="https://github.com/HZ-HBO-ICT">HZ-HBO-ICT Study Program</a></li>
+                </ul>
+            </aside>
 
-<footer>
-    <div class="footer-content">
-        <p>&copy; 2024 Mikias Tesfaye. All rights reserved.</p>
-    </div>
-</footer>
+            <main class="blog-container">
+                <h1>Blog</h1>
 
-    
+                <section class="blog-post" id="study-choice">
+                    <h2>Study Choice</h2>
+                    <br>
+                    <p style="color: white;">My name is Mikias Tesfaye, and I am 23 years old. I currently reside in the
+                        Netherlands....<a href="posts/study Choice.html" class="read-more"> Read More</a></p>
+                </section>
+
+                <section class="blog-post" id="swot-analysis">
+                    <h2>Personal SWOT Analysis</h2>
+                    <br>
+                    <p style="color: white;">One of my biggest strengths is being organized and managing my....<a
+                            href="posts/swot.html" class="read-more"> Read More</a></p>
+                </section>
+
+                <section class="blog-post" id="programming-experience">
+                    <h2>Programming Experience</h2>
+                    <br>
+                    <p style="color: white;">I’ve taken some online courses and gained a bit of programming experience
+                        along the way.
+                        Even though I have some knowledge....<a href="posts/programming Experience.html"
+                            class="read-more"> Read More</a></p>
+                </section>
+
+                <section class="blog-post" id="first-feedback">
+                    <h2>First Feedback</h2>
+                    <br>
+                    <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis autem
+                        placeat amet exercitationem delectus deserunt fugit labore modi accusamus totam, veniam aperiam
+                        asperiores omnis provident mollitia. Quaerat, deserunt. Incidunt, voluptate....<a
+                            href="posts/feedback.html" class="read-more"> Read More</a></p>
+                </section>
+
+                <section class="blog-post" id="exploring-ict">
+                    <h2>Exploring the ICT Field</h2>
+                    <br>
+                    <p style="color: white;"> The world of ICT is super exciting and always evolving! At its core, ICT
+                        is all about
+                        using technology to manage and communicate...<a href="posts/ict_field.html"
+                            class="read-more"> Read More</a></p>
+                </section>
+            </main>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Mikias Tesfaye. All rights reserved.</p>
+            <img src="img/hz-logo.png" alt="Footer Logo" class="footer-logo">
+        </div>
+    </footer>
+
+
 </body>
+
 </html>
